@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./verify.css">
+    <title>Verify your Certificate | The Blackroot Hub</title>
+</head>
+<body>
+    <nav>
+        <a href="/"><img src="./assets/images/The Blackroot Hub Dark.png" alt="The Blackroot Hub Logo" class="logo"></a>
+        <div class="navigation-links">
+            <a class="c-22 red-gradient-text" href="/">Home</a>
+            <a class="c-22 red-gradient-text" href="#courses">Courses</a>
+            <a class="c-22 red-gradient-text" href="#about">About</a>
+        </div>
+        <button class="homebtn btn" onclick="location.href='index.html'">Home</button>
+    </nav>
+    <hr>
+    <main>
+        <section class="hero-section">
+            <img src="./assets/images/hero-banner.jpg" alt="Office picture from unplash" class="hero-banner">
+            <div class="hero-content">
+                <h1 class="hero-text c-30 light-white">Learn by <span class="red-gradient-text italic">Doing.</span><br>Grow with <span class="red-gradient-text italic">Projects.</span></h1>
+                <p class="hero-description cd-thin-italic-20 light-white">At <span class="red-gradient-text tbh-highlight">The Blackroot Hub</span> we offer virtual learning and internship programmes designed to build real skills through weekly projects. Whether you're a student or a young professional, our hands-on approach helps you gain confidence and practical experience.</p>
+            </div>
+        </section>
+        <hr>
+        <section id="verify-section" class="verify-section">
+            <h2 class="c-25 italic">verify your<br><span class="c-30 red-gradient-text">certificate.</span></h2>
+            <input type="text" id="cert-input" placeholder="TBH-2025-ABCDE">
+            <section class="certificate-details-area">
+                <p class="stu-name c-20 light-white">Name: <span id="name" class="red-gradient-text cd-16-500"></span></p>
+                <p class="stu-college c-20 light-white">College: <span id="university" class="red-gradient-text cd-16-500"></span></p>
+                <p class="stu-branch c-20 light-white">Branch: <span id="branch" class="red-gradient-text cd-16-500"></span></p>
+                <p class="stu-course-type c-20 light-white">Course type: <span id="course-type" class="red-gradient-text cd-16-500"></span></p>
+                <p class="date-of-issue c-20 light-white">Date of issued: <span id="issued-at" class="red-gradient-text cd-16-500"></span></p>
+                <p class="cert-status c-20 light-white">Status: <span id="cert-status" class="red-gradient-text cd-16-500"></span></p>
+            </section>
+        </section>
+        <hr>
+        <section class="contact-section">
+            <h2 class="section-title c-30 red-gradient-text center-align mb30">Want to talk?</h2>
+            <p class="section-description cd-thin-18 center-align light-white mb30">Have questions, feedback, or partnership ideas? Wed love to hear from you. Reach out and we'll get back within 24 hours.</p>
+            <form class="contact-form" action="#">
+                <label for="email" class="red-gradient-text c-20 mb10">Email</label>
+                <input class="mb30" type="email" id="email" name="email" required placeholder="your mail address">
+
+                <label class="red-gradient-text c-22 mb10" for="message">Message</label>
+                <textarea class="mb30" id="message" name="message" rows="5" required placeholder="your message..."></textarea>
+
+                <button class="btn" type="submit">Contact Now</button>
+            </form>
+        </section>
+        <hr>
+        <footer>
+            <p class="footer-text c-12 center-align red-gradient-text mb30">© 2025 The Blackroot Hub. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script>
+        window.__SUPABASE_URL__ = "https://xcglwqnrxfmdqgztmxzq.supabase.co";
+        window.__SUPABASE_ANON_KEY__ = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhjZ2x3cW5yeGZtZHFnenRteHpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUzMjI0ODUsImV4cCI6MjA3MDg5ODQ4NX0.8C43SNNiva9tqC4IKLMxIdDj0WFfX326Bmh0edQn-Qg";
+    </script>
+
+    <script type="module" src="https://esm.sh/@supabase/supabase-js@2"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

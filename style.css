@@ -1,0 +1,539 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('../assets/fonts/Coolvetica\ Rg.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('../assets/fonts/Coolvetica\ Rg\ It.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('../assets/fonts/CreatoDisplay-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('../assets/fonts/CreatoDisplay-LightItalic.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('../assets/fonts/CreatoDisplay-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('../assets/fonts/CreatoDisplay-Medium.otf') format(opentype);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('../assets/fonts/CreatoDisplay-BoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+:root{
+    --color-primary: #ff9999;
+    --color-secondary: #cc0000;
+    --red-gradient: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+    --white-gradient: linear-gradient(to bottom, #ffffff, #d9d9d9);
+
+    --coolvetica: 'Coolvetica', sans-serif;
+    --creato-display: 'Creato Display', sans-serif;
+}
+
+.red-gradient-text{
+    background: var(--red-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transaprent;
+    color: transparent;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.cd-24-thin{
+    font-family: var(--creato-display);
+    font-size: 2.4rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.cd-thin-italic-20{
+    font-family: var(--creato-display);
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+
+}
+.cd-thin-18{
+    font-family: var(--creato-display);
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.cd-thin-15{
+    font-family: var(--creato-display);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.cd-16-500{
+    font-family: var(--creato-display);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.c-12{
+    font-family: var(--coolvetica);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.c-22{
+    font-family: var(--coolvetica);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.c-25{
+    font-family: var(--coolvetica);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.c-20{
+    font-family: var(--coolvetica);
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.c-30{
+    font-family: var(--coolvetica);
+    font-size: 3rem;
+}
+
+.light-white{
+    color: #999999;
+}
+
+.center-align{
+    text-align: center;
+}
+
+.mb10{
+    margin-bottom: 1rem;
+}
+
+.mb20{
+    margin-bottom: 2rem;
+}
+
+.mb30{
+    margin-bottom: 3rem;
+}
+
+.mb40{
+    margin-bottom: 4rem;
+}
+
+.mb50{
+    margin-bottom: 5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6, p, img{
+    user-select: none !important;
+}
+
+.desktop{
+    display: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    padding: 0 30px;
+}
+
+nav{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.navigation-links{
+    display: none;
+}
+
+.logo{
+    max-height: 60px;
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white !important;
+    background: var(--red-gradient);
+    border: none;
+    /* border-radius: .7rem; */
+    cursor: pointer;
+}
+
+hr{
+    border: 0.5px solid var(--color-secondary);
+    margin: 50px 0;
+}
+
+.hero-section{
+    width: 100%;
+    height: auto;
+    font-family: 'Creato Display', sans-serif;
+    margin-bottom: 50px;
+}
+
+.hero-banner{
+    display: none;
+}
+
+.hero-text{
+    margin-bottom: 30px;
+    line-height: 130%;
+}
+
+.hero-description{
+    line-height: 130%;
+}
+
+.tbh-highlight{
+    font-weight: 700;
+    font-style: italic;
+}
+
+.course-section .section-title{
+    text-align: center;
+}
+
+.course-card-container-mobile{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 3rem;
+    margin-bottom: 10rem;
+}
+
+.card-cover-desktop{
+    display: none;
+}
+
+.course-card-mobile{
+    position: relative;
+}
+
+.card-cover-mobile{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    border: 3px solid var(--color-secondary);
+}
+
+.course-content-mobile{
+    position: absolute;
+    color: white;
+    left: 15px;
+    bottom: 15px;
+}
+
+.course-title{
+    margin-bottom: .5rem;
+}
+
+.course-description{
+    width: 95%;
+}
+
+.about-section .section-title{
+    margin-bottom: 3rem;
+}
+
+.about-card-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 50px 0;
+    gap: 3rem;
+}
+
+.about-card{
+    width: 100%;
+    background: var(--red-gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 5rem;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.about-card-title{
+    margin-bottom: 2rem;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    padding: 1rem;
+    color: #999999;
+    border: 3px solid;
+    border-image: var(--red-gradient) 1;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.footer-text{
+    letter-spacing: 0px;
+}
+
+@media (min-width: 1024px) {
+    *{
+        letter-spacing: 1px;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    body{
+        padding: 0;
+    }
+
+    nav{
+        height: 100px;
+        margin: 0px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, .8);
+        backdrop-filter: blur(1rem);
+        padding: 0 10rem;
+    }
+
+    .navigation-links{
+        display: block;
+    }
+
+    .navigation-links a{
+        text-decoration: none;
+        margin-right: 2rem;
+    }
+
+    .navigation-links a:last-child{
+        margin-right: 0;
+    }
+
+    hr:first-of-type{
+        display: none;
+    }
+
+    .hero-section{
+        background-color: #824d4d4c;
+        position: relative;
+        margin-bottom: 10rem;
+    }
+
+    .hero-banner{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-content{
+        position: absolute;
+        bottom: 10rem;
+        left: 5rem;
+        max-width: 70rem;
+    }
+
+    .hero-text{
+        color: white;
+        font-size: 6rem;
+    }
+
+    .hero-description{
+        color: white;
+        font-style: normal;
+        line-height: 130%;
+    }
+
+    .tbh-highlight{
+        font-style: normal;
+    }
+
+    .course-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-section .section-description{
+        font-size: 2.4rem;
+        max-width: 80rem;
+    }
+
+    .card-cover-mobile{
+        display: none;
+    }
+    
+    .course-card-mobile{
+        width: 35rem;
+        height: 45rem;
+        aspect-ratio: 7/9;
+        overflow: hidden;
+        border-radius: 15px;
+        border: 3px solid var(--color-secondary);
+    }
+    
+    .card-cover-desktop{
+        display: block;
+        width: 100%;        
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .course-card-container-mobile{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10rem;
+    }
+
+    .course-title{
+        font-family: var(--coolvetica);
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .course-description{
+        font-family: var(--creato-display);
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .about-section{
+        margin-top: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section .section-description{
+        font-size: 2.4rem;
+        color: #999999;
+        max-width: 90rem;
+    }
+
+    .about-card-container{
+        margin: 10rem 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 125rem;
+    }
+
+    .about-card{
+        padding: 5rem;
+    }
+
+    .about-card-title{
+        font-size: 3rem;
+    }
+
+    .about-card-description{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .contact-section{
+        margin: 10rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section .section-title{
+        font-size: 4rem;
+    }
+
+    .contact-section .section-description{
+        font-size: 2rem;
+        max-width: 90rem;
+        margin-bottom: 5rem;
+    }
+
+    .contact-form{
+        min-width: 50rem;
+    }
+
+    .contact-form input,textarea{
+        padding: 2rem;
+        font-size: 2rem;
+        font-family: var(--creato-display);
+        font-weight: 300;
+        resize: none;
+    }
+
+    .contact-form input{
+        height: 6rem;
+        margin-bottom: 5rem;
+    }
+
+    .contact-form label{
+        font-size: 3rem;
+    }
+
+    .contact-form button{
+        height: 6rem;
+    }
+
+    .footer-text{
+        font-size: 2rem;
+    }
+}
